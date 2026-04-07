@@ -2,7 +2,7 @@ import boto3
 from datetime import datetime, timedelta, timezone
 from io import StringIO
 
-session = boto3.Session(profile_name="971996090633_UST_AWS_971996090633_CloudAdmin", region_name="us-east-1")
+session = boto3.Session(profile_name="default", region_name="us-east-1")
 logs_client = session.client("logs", region_name="us-east-1")
 
 log_group = "/aws-glue/jobs/error"
